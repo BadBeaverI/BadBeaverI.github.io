@@ -28,6 +28,27 @@
   </head>
 
   <body>
+	  // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCYLWRx2_FVxQBpMxkENQYAVNU-4lQLMTI",
+  authDomain: "domaskaab.firebaseapp.com",
+  projectId: "domaskaab",
+  storageBucket: "domaskaab.appspot.com",
+  messagingSenderId: "880559291547",
+  appId: "1:880559291547:web:004ec22ae773caa2119a3e",
+  measurementId: "G-4DF16TGVY2"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 	  <!-- Varioqub experiments -->
 <script type="text/javascript">
 (function(e, x, pe, r, i, me, nt){
